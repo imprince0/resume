@@ -145,8 +145,3 @@ strong {
 	.noPrint {
 		display: none;
 	}
-
-	a[href]:after {
-		content: none !important;
-	}
-}
