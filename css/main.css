@@ -3,7 +3,6 @@ body {
 	line-height: 1.4em;
 	padding: 0;
 	margin: 0;
-	font-size: 13.5px;
 }
 
 main {
@@ -16,6 +15,9 @@ main {
 	text-align: left;
 }
 
+button {
+	width: 50%;
+}
 
 h2 {
 	margin-bottom: 4px;
@@ -25,13 +27,11 @@ h2 {
 h4 {
 	margin-top: 15px;
 	margin-bottom: 0px;
-	font-size: 18px;
 }
 
 h5 {
 	margin-top: 2px;
 	margin-bottom: 3px;
-	font-size: 14px;
 }
 
 a {
@@ -145,3 +145,7 @@ strong {
 	.noPrint {
 		display: none;
 	}
+	a[href]:after {
+		content: none !important;
+	}
+}
