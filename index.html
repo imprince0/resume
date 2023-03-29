@@ -10,6 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <title>Prince Resume</title>
+
+    <!-- temp -->
+    <style>
+        main{
+            margin-top: 1px;
+        }
+    </style>
 </head>
 
 <body>
@@ -198,8 +205,12 @@
         </div>
     </main>
     <div class="noPrint">
+        <div class="card-body">
+            <p align="center">Please select "save to PDF" while downloading the resume.</p>
+            
+        </div>
         <div style="text-align: center;">
-            <button type="button" class="btn btn-primary" id="print-button">Download Resume</button>
+            <button type="button" class="btn btn-primary" onclick="printWithBackground()">Download Resume</button>
         </div>
         <br>
     </div>
@@ -210,9 +221,7 @@
                 printBackground: true
             };
             window.print(printOptions);
-            console.log("Printed");
         }
-        document.getElementById("print-button").addEventListener("click", printWithBackground);
     </script>
 </body>
 
