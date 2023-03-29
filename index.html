@@ -180,19 +180,21 @@
                 <hr>
                 <h4><strong>Key courses taken</strong></h4>
             </div>
-            <ul>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-xs-6">
+                        <ul>
                         <li>Data Structures and Algorithms</li>
                         <li>Database</li>
                         <li>OOPS in Java</li>
+                    </ul>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-xs-6">
+                        <ul>
                         <li>Operating System</li>
                         <li>Automata</li>
+                    </ul>
                     </div>
                 </div>
-            </ul>
         </div>
     </main>
     <div class="noPrint">
@@ -208,6 +210,7 @@
                 printBackground: true
             };
             window.print(printOptions);
+            console.log("Printed");
         }
         document.getElementById("print-button").addEventListener("click", printWithBackground);
     </script>
